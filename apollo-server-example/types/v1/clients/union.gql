@@ -1,0 +1,2 @@
+union GetClients = NotAuthorize | Clients
+union GetClientById = NotAuthorize | ClientFound | ClientNotFound

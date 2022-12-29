@@ -1,0 +1,6 @@
+type Film {
+  id: ID!
+  title: String
+  actors: [Person]
+  director: Person
+}

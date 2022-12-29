@@ -1,0 +1,5 @@
+extend type Person @key(fields: "id") {
+  id: ID! @external
+  appearedIn: [Film]
+  directed: [Film]
+}

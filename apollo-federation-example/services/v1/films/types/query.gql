@@ -1,0 +1,4 @@
+type Query {
+  film(id: ID!): Film
+  films: [Film]
+}

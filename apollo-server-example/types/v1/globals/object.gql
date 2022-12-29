@@ -1,0 +1,6 @@
+# global NotAuthorize implements the global ServerResponse Interface
+type NotAuthorize implements ServerResponse {
+  success: Boolean!
+  message: String!
+  code: Int!
+}

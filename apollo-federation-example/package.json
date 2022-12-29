@@ -1,0 +1,41 @@
+{
+  "name": "apollo-federation-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently -k npm:dev:*",
+    "dev:people": "nodemon ./services/v1/people/server.js",
+    "dev:films": "nodemon ./services/v1/films/server.js",
+    "dev:gateway": "nodemon ./server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/federation": "^0.17.0",
+    "@apollo/gateway": "^0.17.0",
+    "apollo-datasource": "^0.7.2",
+    "apollo-datasource-rest": "^0.9.3",
+    "apollo-server": "^2.15.1",
+    "apollo-server-testing": "^2.15.1",
+    "colors": "^1.4.0",
+    "concurrently": "^5.2.0",
+    "dotenv": "^8.2.0",
+    "graphql": "^14.7.0",
+    "graphql-redis-subscriptions": "^2.2.1",
+    "graphql-tools": "^6.0.13",
+    "ioredis": "^4.17.3",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.3.0",
+    "sequelize-cli": "^6.2.0",
+    "wait-on": "^5.1.0"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0",
+    "nodemon": "^2.0.4"
+  }
+}

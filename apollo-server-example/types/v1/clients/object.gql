@@ -1,0 +1,28 @@
+# Client object type
+type Client {
+  id: ID!
+  name: String
+  age: Int @deprecated(reason: "Use name instead")
+  products: [Product]
+}
+
+# Clients object type implementing global ServerResponse
+type Clients implements ServerResponse {
+  success: Boolean!
+  clients: [Client]
+  code: Int!
+}
+
+# ClientFound object type implementing global ServerResponse
+type ClientFound implements ServerResponse {
+  success: Boolean!
+  client: Client!
+  code: Int!
+}
+
+# ClientNotFound object type implementing global ServerResponse
+type ClientNotFound implements ServerResponse {
+  success: Boolean!
+  message: String!
+  code: Int!
+}

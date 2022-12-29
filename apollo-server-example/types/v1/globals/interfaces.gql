@@ -1,0 +1,5 @@
+# global ServerResponse interface
+interface ServerResponse {
+  success: Boolean!
+  code: Int!
+}
